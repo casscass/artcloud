@@ -259,13 +259,13 @@ After revisions necessary for creation of a MVP, the current ERD is as below.
 
 ## Trello
 
-Trello was used from the beginning of this project to track ideas and tasks, as well as completion dates.
+Trello was used for this project to document and track ideas,tasks, donuts and sprinkles. And to keep track of task deadlines.
 
 See this project's [Trello board](https://trello.com/b/cknJByWB/art-cloud-online-art-shop) for details.
 
-A snapshot at one moment in time is provided below.
+A snapshot of Trello board is provided below.
 
-![trello](./documenation/UserStoriesTrello.png)
+![trello](/readme_references/UserStoriesTrello.png)
 
 
 
