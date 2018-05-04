@@ -25,7 +25,7 @@ class ArtworksController < ApplicationController
   # POST /artworks.json
   def create
     @artwork = Artwork.new(artwork_params)
-
+    @artwork.user = current_user
     respond_to do |format|
       if @artwork.save
         format.html { redirect_to @artwork, notice: 'Artwork was successfully created.' }
@@ -69,6 +69,6 @@ class ArtworksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def artwork_params
-      params.require(:artwork).permit(:artist, :catagory, :title, :medium, :description, :price)
+      params.require(:artwork).permit(:artist, :catagory, :title, :medium, :description, :price, :user)
     end
 end
