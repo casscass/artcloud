@@ -68,8 +68,9 @@ class ArtworksController < ApplicationController
       @artwork = Artwork.find(params[:id])
     end
 
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def artwork_params
-      params.require(:artwork).permit(:artist, :catagory, :title, :medium, :description, :price, :user)
+      params.require(:artwork).permit(:artist, :catagory, :title, :medium, :description, :price, :user, :image)
     end
 end
