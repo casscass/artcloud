@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'carrierwave', '~> 1.0'
 gem 'fog-aws', '~> 3.0'
+gem 'dotenv-rails'
 
 # gem 'dotenv-rails', groups: [:development, :test]
 gem "figaro"

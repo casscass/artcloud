@@ -26,3 +26,5 @@
 /config/application.yml
 
 public/uploads
+
+.env
