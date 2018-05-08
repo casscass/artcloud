@@ -40,19 +40,26 @@
                   <td><%= link_to 'Show', artwork %></td> 
                   <td><%= link_to 'Edit', edit_artwork_path(artwork) %></td>
                   <td><%= link_to 'Destroy', artwork, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  
+                  <%= form_tag charges_path do %>
+                  <%= javascript_include_tag 'https://checkout.stripe.com/checkout.js',
+                    class: 'stripe-button',
+                    data: {
+                      key: ENV['stripe_publishable_key'],
+                      # total price x 100 because it must be in cents
+                      amount:100,
+                      name: current_user.email,
+                      description: "Example charge",
+                      image: "https://stripe.com/img/documentation/checkout/marketplace.png",
+                      locale: "auto",
+                      currency: "aud"
+                      }
+                      %>
+                      <% end %>
+                      
                 </tr>
 
-                 <ul class="list-group">
-                  <li class="list-group-item"><%= artwork.artist %></li>
-                  <td><%= artwork.catagory %></td>
-                  <td><%= artwork.title %></td>
-                  <td><%= artwork.medium %></td>
-                  <td><%= artwork.description %></td>
-                  <td><%= artwork.price %></td>
-                  <td><%= link_to 'Show', artwork %></td> 
-                  <td><%= link_to 'Edit', edit_artwork_path(artwork) %></td>
-                  <td><%= link_to 'Destroy', artwork, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                </tr>
+                 
               <% end %>
             </tbody>
           </table>
