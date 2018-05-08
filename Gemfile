@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# gem 'dotenv-rails', groups: [:development, :test]
-gem "figaro"
 ruby '2.5.1'
+
+
+# gem 'dotenv-rails', groups: [:development, :test]
+#gem "figaro" 
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 gem 'devise'
+gem 'stripe'
+#gem "figaro" 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
@@ -36,6 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'dotenv-rails', groups: [:development, :test]
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
