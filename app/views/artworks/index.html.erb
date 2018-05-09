@@ -1,36 +1,86 @@
 
-<div class="container-fluid myfont">
-    <div class="col">
-      <div class="row">
-        <div class="col-12">
-          <p id="notice"><%= notice %></p>
-    
-          <div class="main-heading">
-            <h1>Art Cloud</h1>
+
+  <div id="main_container" class="container.fluid myfont">
+    <div class="row">
+      <div class="col-12">
+        <p id="notice"><%= notice %></p>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Artists</a>
+      <a class="nav-item nav-link" href="#"> Stuff</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </div>
+  </div>
+</nav>
+
+
+ <!--Sign Up Button --> 
+
+ <!--Sign In Button --> 
+ 
+
+ <!--Create Profile Button-->
+  <%= link_to 'Create Profile ', new_profile_path %> 
+  <br>  
+  
+  
+ <!--Create New Artwork Button IF logged in and has profile--> 
+  <%= link_to 'New Artwork Listing', new_artwork_path %>    
+
+  <!--Create Go To Profile Button IF logged as user that ownes that profile--> 
+ 
+  
+
+
+ 
+
+
+
+
+<!--Main Header-->         
+          <div class="col-12 cloud-image">
+            <%=image_tag("cloud-md.png")%>
           </div>
 
           <div class= 'col-12'>
+           <div class="website-header">
             <h1>Sydney Artists</h1>
           </div>
 
-          <table>
-          <thead>
+
+<!--  div for tables -->
+          <table class="table">
+            <thead>
               <tr>
                 <th>Image</th>
                 <th>Artist</th>
-                <th><!--Catagory--></th>
-                <th><!--Title--></th>
-                <th><!--Medium--></th>
-                <th><!--Description--></th>
-                <th><!--Price--></th>
+                <th>Catagory</th>
+                <th>Title</th>
+                <th>Medium</th>
+                <th>Description</th>
+                <th>Price</th>
                 <th colspan="3"></th>
               </tr>
             </thead>
 
             <tbody>
+             
               <% @artworks.each do |artwork| %>
                 <tr>
-                  <td><%= artwork.image %></td>
+                  <td>                    
+                    <% if artwork.image.present? then %>
+                      <%= image_tag artwork.image.url %>
+                    <% else %>
+                      No image
+                    <% end %>
+                  </td>
                   <td><%= artwork.artist %></td>
                   <td><%= artwork.catagory %></td>
                   <td><%= artwork.title %></td>
@@ -38,20 +88,25 @@
                   <td><%= artwork.description %></td>
                   <td><%= artwork.price %></td>
                   <td><%= link_to 'Show', artwork %></td> 
+                  <!--link to artists profile page that shows all THEIR artwork -->
+                  <td><%= link_to 'Go to Artist', artwork.user.profile%></td> 
+
+
+                  <!--link_to @book.user.profile.username,  @book.user.profile -->
+                  
 
                 </tr>
               <% end %>
-
-            
             </tbody>
           </table>
 
-          <br>
+         
 
-          <%= link_to 'New Artwork', new_artwork_path %>
+         
         </div>
       </div>
     
     </div> 
-</div>    
+  </div>
+</html>    
 

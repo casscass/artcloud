@@ -37,6 +37,7 @@ gem 'fog-aws', '~> 3.0'
 gem 'stripe'
 gem 'figaro'
 gem 'sendgrid-ruby'
+gem 'mini_magick', '~> 4.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
