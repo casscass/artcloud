@@ -35,7 +35,7 @@
   <%= image_tag(@artwork.image.url, alt: 'Image') if @artwork.image? %>
 </p>
 
-<!-- logged in user privalages -->
+<!-- logged in owner of artwork privalages -->
 <% if @artwork.user == current_user %>
   <%= link_to 'Edit', edit_artwork_path(@artwork) %> | 
   <%= link_to 'Back', artworks_path %> |
@@ -43,21 +43,21 @@
 <% end %>
 
 
+<!-- Strip 'buy now' button -->
+<%= form_tag charges_path do %>
+<%= javascript_include_tag 'https://checkout.stripe.com/checkout.js',
+  class: 'stripe-button',
+  data: {
+    key: ENV['stripe_publishable_key'],
+    # total price x 100 because it must be in cents
+    amount:100,
+    name: current_user.email,
+    description: "Example charge",
+    image: "https://stripe.com/img/documentation/checkout/marketplace.png",
+    locale: "auto",
+    currency: "aud"
+    }
+  %>
+  <% end %>
 
-
-                  <%= form_tag charges_path do %>
-                  <%= javascript_include_tag 'https://checkout.stripe.com/checkout.js',
-                    class: 'stripe-button',
-                    data: {
-                      key: ENV['stripe_publishable_key'],
-                      # total price x 100 because it must be in cents
-                      amount:100,
-                      name: current_user.email,
-                      description: "Example charge",
-                      image: "https://stripe.com/img/documentation/checkout/marketplace.png",
-                      locale: "auto",
-                      currency: "aud"
-                      }
-                      %>
-                      <% end %>
 
