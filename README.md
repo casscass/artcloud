@@ -18,198 +18,126 @@ This statement is justified by answering the following questions:
   - What's wrong with the sites that already exist?
   - How is this site different to existing online sites that sell artwork?
 
-### Why is a need for an online store dedicated to buying and selling of artworks in Sydney?
 
+#### Why online and not through Art Galleries 
+Art Galleries charge 35% to 50% commission for sales, as a result artists only receive  between 50-65% of the sale price of their work. Selling through an online site that only changes 5% -10% allows artists to receive between 90-95% of the sales.
+
+ Having an online option provides greater ease and convenience for buying. It opens up the range and geolocation of potential buyers to, potentially the global village but, focusing on the Sydney market, it allows buyers to purchase at any time (e.g. outside business hours) and because the artists will be predominantly located in the Sydney area, it ensures speedy delivery of artwork. Also allows for people that cannot physically access a store.
+
+#### Why Locally to Sydney?
+Only a few of the many Sydney artists are represented by Galleries. As a result they have to finance their own solo of group exhibitions.
+
+Sydney has many local artists who do excellent artwork, however the high price of hireing a gallery (in Sydney) for an exhibition and giving the gallery a large percentage of the sales act to restrict artists from exhibiting their work frequently. 
+
+This App would allow artists to have their work visable and available for purchase 24/7 without high overheads.
+
+
+#### What's wrong with the sites that already exist?
+Other sites for online selling of artwork exist, however they:
+ - Don't just sell artwork. e.g. www.artmegallery.com.au also sells craft, jewellery , lamps decor, hand painted cursors, marbles etc.
+  - Redirect the buyer to the gallery that represents the artist. So you are in effect buying from the Gallery not the artist.
+  - Promote the Gallery not the artist
+  - Have a funky website but its not operational. See https://www.artcloud.xyz/
+
+#### How is this site different to existing online sites that sell artwork?
+ - Artists sell direct to the buyer, without gallery overheads.
+ - Only artwork is sold on this site
+ - No Joining fees
+ 
 ### The Solution
+To build the Art Cloud site that include the following:
+ - Artists sell direct to the buyer, without gallery overheads.
+ - Only artwork is sold on this site so thier are no other products to distract the   buyer from the artworks.
+ - No Joining fees and no commisssions charged.
 
  ## User Stories
- ---
+ 
+
  Preliminary user stories were documented in Trello, The more detailed user stories that inflormed the features are below in _Detailed User Stories_.
-### Preliminary User Stories
+
 
 ### Detailed User Stories
-User should be able to edit their own profile
 
-***User should be able to edit their own profile***
+***User should be able to search artworks, view individual artworks and buy artwork without loggin in.***
 
-**Feature:** Edit Profile
-
+**Feature:**  Search, View, Buy artwork without logging in.
 - As a User
-- I want to edit my profile
-- Because I want to keep my details up to date
+- I want to search, view, buy artwork without login
+- Because I want to check out and maybe buy the artwork without signing in. And I dont have time to bother signing in.
 
-**Scenario:** User edits profile
-
-- Given I'm a logged in User
-- When I go to the edit profile page for my profile
-- And I change the text in the text fields and/or upload a new profile photo
-- And I click "Update profile"
-- Then I should see my profile page
-- And the details should be updated
+**Scenario:** User tries to search, view and buy artwork.
+- As a not signed in User
+- When I try to search, view and buy artwork
+- I am able to search, view and buy artwork
 
 ---
 
-***User should not be able to edit a profile that is not theirs***
+***User should be able to create, edit and update their own profile***
+
+**Feature:** Create, Edit, Update Use/Artists Profile
+
+- As a User
+- I want to create,edit update my profile
+- Because my details change and I want control over my profile and any artwork images and text.
+
+**Scenario:** User edits their own profile
+
+- As a logged in User
+- When I try to edit/update my profile
+- And I change the text in the text fields and/or change my profile photo/avatar
+- When I click "Update"
+- I should see my profile page with the new changes applied
+
+---
+
+***User can only edit, update or destrot their own profile***
 
 **Feature:** Unable to edit other user's profile
 - As a User
-- I want nobody other than me to be able to edit my profile
-- Because I want to have control over my profile details
+- I want to be the only one able to edit my profile
+- Because I want to have control over my profile details and I dont want someone else changing my details.
 
-**Scenario:** User attempts to edit another user's profile
-- Given I'm a logged in User
-- When I go to the edit profile page for another user's profile
-- Then I am redirected back to the user's profile view page
+**Scenario:** User tries to edit another user's profile
+- As a logged in User
+- When I attempt to edit the profile page for another user's profile
+- The buttons for edit, destroy are not displayed, therefor I am unable to edit anothers page.
 
 ---
 
-***User should be able to edit a book listing that is theirs***
+***User should be able to edit, update or destory an artwork that is theirs***
 
-**Feature:** Edit Book Listing
+**Feature:** Edit Artwork Listing
 - As a User
-- I want to edit one of my book listings
-- Because I want to improve the accuracy of my book listing
+- I want to edit one of my atworks 
+- Because the details of that artwork.
 
-**Scenario:** User edits book listing
-- Given I'm a logged in User
-- When I go to the edit page for a book listing that is mine
-- And I change the text in the text fields and/or upload a new book image
-- And I click "Update book"
-- Then I should see the detailed view page for that book
+**Scenario:** User edits artwork
+- As a logged in User
+- When I go to the edit page for my artwork
+- And I change the price of the artwork and/or the text in the text fields and/or upload a new artwork image
+- And I click "Update"
+- I should see  product page for that atrwork
 - And the details should be updated
 
 ---
 
-***User should not be able to edit a book listing that is not theirs***
+***User should not be able to edit, update or destroy an artwork that is not theirs***
 
-**Feature:** Unable to edit other user's book listing
+**Feature:** Unable to edit or destroy other user's artwork info
 - As a User
-- I want nobody other than me to be able to edit my book listings
-- Because I want to have control over my book listings
+- I want nobody other than me to be able to edit/destroy my artwork info
+- Because I want to have control over myartwork in info
 
-**Scenario:** User attempts to edit another user's book listing
-- Given I'm a logged in User
-- When I go to the edit book page for another user's book listing
-- Then I am redirected back to the detailed view page for that book listing
-
----
-
-***User should be able to delete a book listing that is theirs***
-
-**Feature:** Delete Book Listing
-- As a User
-- I want to delete one of my book listings
-- Because I have decided not to sell it
-
-**Scenario:** User deletes book listing
-- Given I'm a logged in User
-- When I go to the edit page for a book listing that is mine
-- And I click 'delete book'
-- Then the book listing should be deleted from the database
+**Scenario:** User attempts to edit/destroy another user'sartwork infomation
+- As logged in User
+- When I go to the show page for another user's artwork
+- The edit and destroy are not displayed, there for I am unable to edit anothers artwork info
 
 ---
-
-
-***User should not be able to open a message conversation with themselves***
-
-**Feature:** Unable to message self
-- As a User
-- I do not want to see an option to message myself
-- Because this would be pointless functionality
-
-**Scenario:** User visits messages page
-- Given I'm a logged in User
-- When I go to the messages page
-- Then my username is not listed as an option to message
-
----
-
-***User should not see a 'message reader' button on their own profile***
-
-**Feature:** No 'message reader' button on own profile
-- As a User
-- I do not want to see an option to message myself
-- Because this would be pointless functionality
-
-**Scenario:** User visits their profile page
-- Given I'm a logged in User
-- When I go to my profile page
-- Then I do not see a 'message reader' button
-
----
-
-***User should be able to view book listings on homepage without logging in***
-
-**Feature:** Homepage viewable without login
-- As a User
-- I want to view book listings without signing in
-- Because I want to know it's worth signing up before I do so
-
-**Scenario:** User visits homepage
-- Given I'm a logged out user
-- When I go to the homepage
-- Then I can view the book listings
-
----
-
-***User should be able to view detailed book listing without logging in***
-
-**Feature:** Detailed book view viewable without login
-- As a User
-- I want to view book listings without signing in
-- Because I want to know it's worth signing up before I do so
-
-**Scenario:** User visits detailed book view page
-- Given I'm a logged out user
-- When I go to the detailed book view page
-- Then I can view the detailed book view page
-
----
-
-***User should not be able to view Messages page without logging in***
-
-**Feature:** User must be logged in to view messages page
-- As a User
-- I want to know that only users who are logged in can message me
-- Because I don't want to get spammed
-
-**Scenario:** User visits messages page
-- Given I'm a logged out user
-- When I go to the messages page
-- Then I am redirected to the login page
-
----
-
-***User should not be able to view New Book form page without logging in***
-
-**Feature:** User must be logged in to see the add new book form
-- As site Admin
-- I want users to be required to log in in order to add a book listing
-- Because I want to encourage users to create an account on the site
-
-**Scenario:** User visits add new book page
-- Given I'm a logged out user
-- When I go to the add new book page
-- Then I am redirected to the login page
-
----
-
-***When logged in, user should not be able to view any page other than 'create profile' until they have created a profile***
-
-**Feature:** User must create a profile upon signup in order to interact on the site
-- As site Admin
-- I want all users to be required to have a profile
-- Because it builds a sense of community
-
-**Scenario:** User without a profile attempts to visit any page
-- Given I'm a logged in user
-- And I don't have a profile
-- When I go to any page other than the create profile page
-- Then I am redirected to the create profile page.
 
 ## Workflow
 
-The original workflow was conceptualised in the diagram below. Some minor alterations were made during development as needed. These will be reflected in a future version of this diagram.
+The original workflow  for art cloud was conceptualised in the diagram below. There were some minor alterations  made during the development process. These changes will be reflected in an updated future version of this diagram.
 
 
 ![workflow](/readme_resources/workflow_diagram.png)
@@ -222,7 +150,7 @@ Colours and fonts were chosen as below.
 
 ![fonts](/readme_resources/Fonts.png)
 
-Gentium Book Basic is set at a slightly heavier weight than Gentium basic, and is used for publishing books at small point sizes.
+Roboto is a claer font that is highly legable in browsers. It is also clear at a small size so it is easy to read on moble divices.
 
 Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimised for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
 
