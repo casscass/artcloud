@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @profile.user %>
-</p>
+
 
 <p>
   <strong>Username:</strong>
@@ -25,7 +22,11 @@
   <%= @profile.phone %>
 </p>
 
+<!-- ONLY logged in owner of profile page has these privalages -->
+
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+<%= link_to 'Back', profiles_path %> |
+ <%= link_to 'New Artwork Listing', new_artwork_path %>    
+
 
 

@@ -5,20 +5,7 @@
       <div class="col-12">
         <p id="notice"><%= notice %></p>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Artists</a>
-      <a class="nav-item nav-link" href="#"> Stuff</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
-    </div>
-  </div>
-</nav>
+
 
 
  <!--Sign Up Button --> 
@@ -28,8 +15,7 @@
 
  <!--Create Profile Button-->
   <%= link_to 'Create Profile ', new_profile_path %> 
-  <br>  
-  
+
   
  <!--Create New Artwork Button IF logged in and has profile--> 
   <%= link_to 'New Artwork Listing', new_artwork_path %>    
