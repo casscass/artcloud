@@ -35,6 +35,16 @@
   <%= image_tag(@artwork.image.url, alt: 'Image') if @artwork.image? %>
 </p>
 
+<!-- logged in user privalages -->
+<% if @artwork.user == current_user %>
+  <%= link_to 'Edit', edit_artwork_path(@artwork) %> | 
+  <%= link_to 'Back', artworks_path %> |
+  <%= link_to 'Destroy', @artwork, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+
+
+
+
                   <%= form_tag charges_path do %>
                   <%= javascript_include_tag 'https://checkout.stripe.com/checkout.js',
                     class: 'stripe-button',
@@ -51,5 +61,3 @@
                       %>
                       <% end %>
 
-<%= link_to 'Edit', edit_artwork_path(@artwork) %> |
-<%= link_to 'Back', artworks_path %>
