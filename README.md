@@ -32,6 +32,9 @@ Sydney has many local artists who do excellent artwork, however the high price o
 This App would allow artists to have their work visable and available for purchase 24/7 without high overheads.
 
 
+Other sites for online selling of artwork exist, however they are:
+
+
 #### What's wrong with the sites that already exist?
 Other sites for online selling of artwork exist, however they:
  - Don't just sell artwork. e.g. www.artmegallery.com.au also sells craft, jewellery , lamps decor, hand painted cursors, marbles etc.
@@ -156,7 +159,7 @@ Open Sans was designed with an upright stress, open forms and a neutral, yet fri
 
 ## Wireframes
 
-Content-first mockups were created using Figma and can be viewed [here](https://www.figma.com/file/cHJ5winPhgKShwLn5E3RRi4l/Preloved-Books-Two-Sided-Marketplace).
+Content-first mockups were created using Figma and can be viewed [here]https://www.figma.com/file/0MrAunIkkbD3zDjE3fKtGUlV/ArtCloud-Wireframes.
 
 ![mockup](/readme_resources/mockups/1.png)
 ![mockup](/readme_resources/mockups/2.png)
@@ -206,13 +209,8 @@ A snapshot of Trello board is provided below.
 
 
 
-#### Why online and not through Art Galleries 
-Art Galleries charge 35% to 50% commission for sales, as a result artists only receive  between 50-65% of the sale price of their work. Selling through an online site that only changes 5% -10% allows artists to receive between 90-95% of the sales.
 
-## Why Locally to Sydney?
-Sydney has many local artists 
 
-#### How is this site different to existing online sites that sell artwork?
-Other sites for online selling of artwork exist, however they are:
-1. Not selling just artwork. Eg www.artmegallery.com.au/
-Also sells craft, jewellery , lamps decor, hand painted cursors, marbles etc.
+
+
+
