@@ -243,6 +243,9 @@ The landing page of art cloud will open.
 
 ![github](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/EmailFromArtCloudOnMobile.jpg)
 
+## Code Review
+Did a code review with Katie. Specifically looked at the how she used pundite for for authorisation.
+
 
 ## Result
 Doing this project clarified my understanding of how ruby on rails works.
