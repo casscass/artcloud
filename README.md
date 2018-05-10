@@ -203,12 +203,13 @@ A record of all the frequent commits, feature branches (based on user stories), 
 Ruby on Rails development skills were demonstrated by implementing the following requirements,
 1. App created using using Ruby on Rails
 2. postgresql database was used in development
-3. Figaro was used to  protect API keys etc. 
-4. Stripe was implemented as a payment system
-5. Sendgrid was used to send transactional emails 
-6. The app has a search function. That searches by artists, catagory, medium and price.
-7. Carrierwave was used to upload images
-8. Devise was used for  authorisation (users have restrictions on what they can see and edit)
+3. Figaro was successfully used to protect API keys etc. 
+4. Stripe was implemented as a payment system. It worked for two days, then started sending notices that the keys were not valid.I am currently trying fix it.
+5. Sendgrid was used to send transactional emails. This function works. 
+6. The app has a search function, that searches by artists, catagory, medium and price.
+7. Carrierwave was used to upload images. This was successfull.
+8. Devise was used for authorisation (users have restrictions on what they can see and edit). Successfull restrictions were implemented that allowed logged in users to edit, update and destroy text and images in their profile. No logged in users were restricted from seeing the edit, update and destroy options.
+9. AWS Amazon was attempted however I was unable to get it to work.
 
 ## How to setup, configure and use application
 To use this application got to github 'https://github.com/casscass/artcloud'
