@@ -28,8 +28,8 @@
             <a class="nav-item nav-link text-white" href="#">Artists</a>
             <div class="nav-item nav-link text-white"> <%= render 'devise/menu/registration_items' %></div>
             <div class="nav-item nav-link text-white"><%= render 'devise/menu/login_items' %></div>
-            <div class="nav-item nav-link text-white"><%= link_to 'Create Profile ', new_profile_path %></div>
-            <div class="nav-item nav-link text-white"><%= link_to 'Create New Listing', new_artwork_path %></div>       
+            <div class="nav-item nav-link text-white"><%= link_to 'Profile ', new_profile_path %></div>
+            <div class="nav-item nav-link text-white"><%= link_to ' New Artwork', new_artwork_path %></div>       
         </div>
       </div>
 
@@ -37,7 +37,7 @@
         <%= form_tag(artworks_path, :method => "get", id: "search-form") do %>
           <div class="row">
               <%= text_field_tag :search, params[:search], placeholder: "Search Artworks", class: "form-control col-6 mr-2" %>
-              <%= submit_tag "Search", :name => nil, class: "btn btn-blue font-white col-4" %>
+              <%= submit_tag "Search", :name => nil, class: "btn btn-blue font-white col-3" %>
           </div>
         <% end %>
       </span>
