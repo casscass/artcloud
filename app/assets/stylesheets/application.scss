@@ -47,8 +47,8 @@ ul.hmenu {
 
 // Utility classes
 
-.nav-link {
- color: #f00; //red
+.nav-link a {
+ color: #ffff; //white
 
   @include hover-focus {
     color: #0f0; //green
@@ -61,6 +61,3 @@ ul.hmenu {
 }
 
 // This overides ALL link tags and turns them WHITE!!!!
-a {
-color: #ffffff;
-}
