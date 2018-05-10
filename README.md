@@ -223,18 +223,25 @@ Open a new tab in your browser and type localhost:3000/ it should look like this
 The landing page of art cloud will open.
 
 ## App screenshots
-Landing Page on desktop
+### Landing Page on desktop
+
 ![github](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/IndexPage.png) 
 
-Landing Page on mobile
+
+### Landing Page on mobile
+
 ![github](https://github.com/casscass/artcloud/blob/master/app/assets/images/LandingPageMobile.png) 
 
-Email sent from art cloud app on desktop (sendgrid works!)
-Shows the sender as any_from_address
+
+### Email sent from art cloud app on desktop (sendgrid works!)- Shows the sender as any_from_address@example.com
+
 ![github](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/EmailOpened.png) 
 
-Email sent from art cloud app on mobile - I changed the any_from_address to art_cloud
+
+### Email sent from art cloud app on mobile - I changed the any_from_address to art_cloud
+
 ![github](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/EmailFromArtCloudOnMobile.jpg)
+
 
 ## Result
 Doing this project clarified my understanding of how ruby on rails works.
