@@ -200,7 +200,7 @@ A snapshot of my Trello board twords the end of the project is below.
 
 ### GitHub
 A record of all the frequent commits, feature branches (based on user stories), pull requests and merges undertaken throughout this project can be found at the projects github account below. 
-![github](https://github.com/casscass/artcloud/blob/master/app/assets/images/TrelloProgress3.png) 
+![github](https://github.com/casscass/artcloud) 
 
 
 ##  Requirements - Rails Application Code
@@ -214,20 +214,25 @@ Ruby on Rails development skills were demonstrated by implementing the following
 7. Carrierwave was used to upload images
 8. Devise was used for  authorisation (users have restrictions on what they can see and edit)
 
+## How to setup, configure and use application
+To use this application got to github
+![github](https://github.com/casscass/artcloud) 
+
+Clone the app and in your terminal
+git clone 'PASTE HERE'
+CD into the app 
+Start the rails server 'rails s'
+Open a new tab in your browser and type localhost:3000/ it should look like this: http://localhost:3000/
+The landing page of art cloud will open.
+
+## Result
+Doing this project clarified my understanding of how ruby on rails works.
 
 
 
 
 
 
-
-Trello was used for this project to document and track ideas,tasks, donuts and sprinkles. And to keep track of task deadlines.
-
-See this project's [Trello board](https://trello.com/b/cknJByWB/art-cloud-online-art-shop) for details.
-
-A snapshot of Trello board is provided below.
-
-![trello](/readme_references/UserStoriesTrello.png)
 
 
 
