@@ -5,6 +5,7 @@ Completed as a major assessment in Coder Academy's Fast Track Bootcamp.
 View live: /https://art-cloud.herokuapp.com/
 GitHub: https://github.com/casscass/artcloud
 
+
 ## Problem Definition and Solution
 ---
 ### The Problem
@@ -50,13 +51,17 @@ Other sites for online selling of artwork exist, however they:
 ### The Solution
 To build the Art Cloud site that include the following:
  - Artists sell direct to the buyer, without gallery overheads.
- - Only artwork is sold on this site so thier are no other products to distract the   buyer from the artworks.
+ - Only artwork is sold on this site so thier are no other products to distract the buyer from the artworks.
  - No Joining fees and no commisssions charged.
 
  ## User Stories
  
-
- Preliminary user stories were documented in Trello, The more detailed user stories that inflormed the features are below in _Detailed User Stories_.
+ Preliminary user stories were documented in Trello below.
+ 
+ ![trello](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/UserStoriesTrello.png)
+ 
+ 
+The more detailed user stories that inflormed the features are below in _Detailed User Stories_.
 
 
 ### Detailed User Stories
@@ -138,57 +143,83 @@ To build the Art Cloud site that include the following:
 
 ---
 
-## Workflow
+##  Workflow
 
-The original workflow  for art cloud was conceptualised in the diagram below. There were some minor alterations  made during the development process. These changes will be reflected in an updated future version of this diagram.
+The original workflow for art cloud was conceptualised in the diagram below. There were some minor alterations made during the development process, specifically the Show Artwork Index page became the landing page. 
 
-
-![workflow](/readme_resources/workflow_diagram.png)
-
-## Style Guide
-
-Colours and fonts were chosen as below.
-
-![colours](/readme_resources/color_scheme.png)
-
-![fonts](/readme_resources/Fonts.png)
-
-Roboto is a claer font that is highly legable in browsers. It is also clear at a small size so it is easy to read on moble divices.
-
-Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimised for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.
+The workflow was created with Draw at https://www.draw.io/#G1d34gjmpjcdiu_W--hS_DVSwbyQRy7mlW
+![workflow](https://github.com/casscass/artcloud/blob/master/app/assets/images/Work-flow.png)
 
 ## Wireframes
 
 Content-first mockups were created using Figma and can be viewed [here]https://www.figma.com/file/0MrAunIkkbD3zDjE3fKtGUlV/ArtCloud-Wireframes.
 
-![mockup](/readme_resources/mockups/1.png)
-![mockup](/readme_resources/mockups/2.png)
-![mockup](/readme_resources/mockups/3.png)
-![mockup](/readme_resources/mockups/4.png)
-![mockup](/readme_resources/mockups/5.png)
-![mockup](/readme_resources/mockups/6.png)
-![mockup](/readme_resources/mockups/7.png)
-![mockup](/readme_resources/mockups/8.png)
-![mockup](/readme_resources/mockups/9.png)
-![mockup](/readme_resources/mockups/10.png)
-![mockup](/readme_resources/mockups/11.png)
-![mockup](/readme_resources/mockups/12.png)
-![mockup](/readme_resources/mockups/13.png)
-![mockup](/readme_resources/mockups/14.png)
+Basic wireframes
+![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
 
-
+Wifeframe with images
+![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/WireframesWithImages.png)
 
 ## ERD
-
+The ERD was created at https://www.dbdesigner.net/designer/schema/168142
 The original conception was as follows:
 
-![erd](/readme_resources/erd_original.png)
+![erd](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/ERD.png)
 
-After revisions necessary for creation of a MVP, the current ERD is as below.
 
-![erd](/readme_resources/erd_current.png)
+## Style Guide
 
-## Trello
+This app uses a very minamal colour scheme to showcase the artwork images and ensure that the users focus is not pulled or distracted from the artwork images by any bright colours. Following the minamal 'look' Roboto was chosen as the font because it is a clear font with clean simlpe lines that is highly legable in browsers. It is also clear at a small size so it is easy to read on moble divices.
+Colours and fonts were chosen as below.
+
+![colours](https://github.com/casscass/artcloud/blob/master/app/assets/images/Colour-chart.png)
+
+![fonts](https://github.com/casscass/artcloud/blob/master/app/assets/images/Font-Roboto.png)
+
+##  Tools & Methodologies
+Project management skills are demonstrated through use of Trello and Github 
+
+### Trello
+Project planning and estimation was handled through Trello. 
+Trello cards were used to track donuts and sprinkles and to keeptrack of progress
+Below there are screenshots of Trello showing the progression towards the 'DONE' card. 
+
+See Art Cloud's [Trello board](https://trello.com/b/cknJByWB/art-cloud-online-art-shop) for the final details.
+
+A snapshot of my Trello board near the start of the project is below.
+
+![trello](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/TrelloProgress2.png)
+
+A snapshot of my Trello board at the during the project is below.
+
+![trello](https://github.com/casscass/artcloud/blob/master/app/assets/images/TrelloProgress3.png)
+
+A snapshot of my Trello board twords the end of the project is below.
+
+![trello](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/TrelloProgress4.png)
+
+### GitHub
+A record of all the frequent commits, feature branches (based on user stories), pull requests and merges undertaken throughout this project can be found at the projects github account below. 
+![github](https://github.com/casscass/artcloud/blob/master/app/assets/images/TrelloProgress3.png) 
+
+
+##  Requirements - Rails Application Code
+Ruby on Rails development skills were demonstrated by implementing the following requirements,
+1. App created using using Ruby on Rails
+2. postgresql database was used in development
+3. Figaro was used to  protect API keys etc. 
+4. Stripe was implemented as a payment system
+5. Sendgrid was used to send transactional emails 
+6. The app has a search function. That searches by artists, catagory, medium and price.
+7. Carrierwave was used to upload images
+8. Devise was used for  authorisation (users have restrictions on what they can see and edit)
+
+
+
+
+
+
+
 
 Trello was used for this project to document and track ideas,tasks, donuts and sprinkles. And to keep track of task deadlines.
 
