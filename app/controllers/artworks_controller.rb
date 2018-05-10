@@ -34,6 +34,7 @@ class ArtworksController < ApplicationController
     @artwork.user = current_user
     respond_to do |format|
       if @artwork.save
+        UserNotifierMailer.send_signup_email(current_user).deliver
         format.html { redirect_to @artwork, notice: 'Artwork was successfully created.' }
         format.json { render :show, status: :created, location: @artwork }
       else

@@ -3,7 +3,7 @@
 Completed as a major assessment in Coder Academy's Fast Track Bootcamp.
 
 View live: http://
-
+GitHub: https://github.com/casscass/artcloud
 
 ## Problem Definition and Solution
 ---
