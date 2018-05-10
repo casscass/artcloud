@@ -3,50 +3,17 @@
     <div class="col">
       <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Artist:</strong>
-  <%= @artwork.artist %>
-</p>
-
-<p>
-  <strong em>Title:</strong em>
-  <%= @artwork.title %>
-</p>
-
-<p>
-  <strong>Catagory:</strong>
-  <%= @artwork.catagory %>
-</p>
-
-<p>
-  <strong>Medium:</strong>
-  <%= @artwork.medium %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @artwork.description %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @artwork.price %>
-</p>
-
-<p>
-  <strong>Artwork Image</strong>
-  <%= image_tag(@artwork.image.url, alt: 'Image') if @artwork.image? %>
-</p>
-
-<!-- logged in owner of artwork privalages -->
-<% if @artwork.user == current_user %>
-  <%= link_to 'Edit', edit_artwork_path(@artwork) %> | 
-  <%= link_to 'Back', artworks_path %> |
-  <%= link_to 'Destroy', @artwork, method: :delete, data: { confirm: 'Are you sure?' } %>
-<% end %>
-
-
-<!-- Strip 'buy now' button -->
+<!-- div for cards -->
+ <div class="card mb-3">
+  <div class="card-img-top d-flex flex-row align-items-center" ><%= image_tag(@artwork.image.url, alt: 'Image') if @artwork.image? %></div>
+  <div class="card-body">
+    <h5 class="card-title">Artist: <%= @artwork.artist %></h5>
+    <h5 class="card-text">Title: <%= @artwork.title %></h5>
+    <h5  class="card-text">Catagory: <%= @artwork.catagory %></h5>
+    <h5  class="card-text">Medium: <%= @artwork.medium %></h5>
+    <h5  class="card-text">Price $ <%= @artwork.price %></p>
+    <p class="card-text"><small class="text-muted"> Description: <%= @artwork.description %></small></p>
+    <!-- Strip 'buy now' button -->
 <%= form_tag charges_path do %>
 <%= javascript_include_tag 'https://checkout.stripe.com/checkout.js',
   class: 'stripe-button',
@@ -62,5 +29,22 @@
     }
   %>
   <% end %>
+  </div>
+</div>         
+<!-- end div for cards -->
+
+
+
+
+
+<!-- logged in owner of artwork privalages -->
+<% if @artwork.user == current_user %>
+  <%= link_to 'Edit', edit_artwork_path(@artwork) %> | 
+  <%= link_to 'Back', artworks_path %> |
+  <%= link_to 'Destroy', @artwork, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+
+
+
 
 

@@ -29,18 +29,20 @@
 
 
 
-<!--Main Header-->         
-          <div class="col-6 cloud-image">
-            <%=image_tag("cloud-md.png")%>
-          </div>
+<!--Main Header--> 
+            <div class="col">
+              <div class="row">        
+                <div class="col-md-6">
+                  <class="main header">
+                    <%=image_tag("cloud-md.png")%>
+                    <h1>Sydney Artists</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <div class= 'col-12'>
-           <div class="website-header">
-            <h1>Sydney Artists</h1>
-          </div>
 
-
-<!--  div for tables -->
+<!--  div for cards -->
              <div class="col">
               <div class="row">
                 <% @artworks.each do |artwork| %>
@@ -71,13 +73,9 @@
                 </div>
               </div>
 
-small class="text-muted"
-     
-
          
         </div>
       </div>
-    
     </div> 
   </div>
 </html>    

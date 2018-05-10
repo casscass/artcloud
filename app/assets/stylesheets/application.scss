@@ -33,4 +33,29 @@ ul.hmenu {
    
 }
 
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Added */
+}
 
+// Utility classes
+
+.nav-link {
+ color: #f00; //red
+
+  @include hover-focus {
+    color: #0f0; //green
+  }  
+
+
+} 
+.main-header {
+  display:inline
+}
+
+// This overides ALL link tags and turns them WHITE!!!!
+a {
+color: #ffffff;
+}
