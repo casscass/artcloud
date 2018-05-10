@@ -144,15 +144,13 @@ The more detailed user stories that inflormed the features are below in _Detaile
 ---
 
 ##  Workflow
-
 The original workflow for art cloud was conceptualised in the diagram below. There were some minor alterations made during the development process, specifically the Show Artwork Index page became the landing page. 
 
 The workflow was created with Draw at https://www.draw.io/#G1d34gjmpjcdiu_W--hS_DVSwbyQRy7mlW
 ![workflow](https://github.com/casscass/artcloud/blob/master/app/assets/images/Work-flow.png)
 
 ## Wireframes
-
-Content-first mockups were created using Figma and can be viewed [here]https://www.figma.com/file/0MrAunIkkbD3zDjE3fKtGUlV/ArtCloud-Wireframes.
+The mockups were created using Figma and can be viewed [here]https://www.figma.com/file/0MrAunIkkbD3zDjE3fKtGUlV/ArtCloud-Wireframes.
 
 Basic wireframes
 ![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
@@ -168,7 +166,6 @@ The original conception was as follows:
 
 
 ## Style Guide
-
 This app uses a very minamal colour scheme to showcase the artwork images and ensure that the users focus is not pulled or distracted from the artwork images by any bright colours. Following the minamal 'look' Roboto was chosen as the font because it is a clear font with clean simlpe lines that is highly legable in browsers. It is also clear at a small size so it is easy to read on moble divices.
 Colours and fonts were chosen as below.
 
@@ -194,14 +191,13 @@ A snapshot of my Trello board at the during the project is below.
 
 ![trello](https://github.com/casscass/artcloud/blob/master/app/assets/images/TrelloProgress3.png)
 
-A snapshot of my Trello board twords the end of the project is below.
+A snapshot of my Trello board towrds the end of the project is below.
 
 ![trello](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/TrelloProgress4.png)
 
 ### GitHub
-A record of all the frequent commits, feature branches (based on user stories), pull requests and merges undertaken throughout this project can be found at the projects github account below. 
+A record of all the frequent commits, feature branches (based on user stories), pull requests and merges undertaken throughout this project can be found at the projects github account. 
 ![github](https://github.com/casscass/artcloud) 
-
 
 ##  Requirements - Rails Application Code
 Ruby on Rails development skills were demonstrated by implementing the following requirements,
@@ -215,15 +211,30 @@ Ruby on Rails development skills were demonstrated by implementing the following
 8. Devise was used for  authorisation (users have restrictions on what they can see and edit)
 
 ## How to setup, configure and use application
-To use this application got to github
+To use this application got to github 'https://github.com/casscass/artcloud'
 ![github](https://github.com/casscass/artcloud) 
 
-Clone the app and in your terminal
-git clone 'PASTE HERE'
-CD into the app 
+Clone the app. 
+Open terminal
+type git clone 'PASTE HERE'.
+CD into the app. 
 Start the rails server 'rails s'
 Open a new tab in your browser and type localhost:3000/ it should look like this: http://localhost:3000/
 The landing page of art cloud will open.
+
+## App screenshots
+Landing Page on desktop
+![github](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/IndexPage.png) 
+
+Landing Page on mobile
+![github](https://github.com/casscass/artcloud/blob/master/app/assets/images/LandingPageMobile.png) 
+
+Email sent from art cloud app on desktop (sendgrid works!)
+Shows the sender as any_from_address
+![github](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/EmailOpened.png) 
+
+Email sent from art cloud app on mobile - I changed the any_from_address to art_cloud
+![github](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/EmailFromArtCloudOnMobile.jpg)
 
 ## Result
 Doing this project clarified my understanding of how ruby on rails works.
