@@ -208,7 +208,7 @@ Ruby on Rails development skills were demonstrated by implementing the following
 5. Sendgrid was used to send transactional emails. This function works. 
 6. The app has a search function, that searches by artists, catagory, medium and price.
 7. Carrierwave was used to upload images. This was successfull.
-8. Devise was used for authorisation (users have restrictions on what they can see and edit). Successfull restrictions were implemented that allowed logged in users to edit, update and destroy text and images in their profile. No logged in users were restricted from seeing the edit, update and destroy options.
+8. Devise was used for authorisation (users have restrictions on what they can see and edit). Successfull restrictions were implemented that allowed logged in users to edit, update and destroy text and images in their profile. Non logged in users were restricted from seeing the edit, update and destroy options.
 9. AWS Amazon was attempted however I was unable to get it to work.
 
 ## How to setup, configure and use application
