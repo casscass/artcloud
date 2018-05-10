@@ -6,6 +6,11 @@ class ArtworksController < ApplicationController
   # GET /artworks.json
   def index
     @artworks = Artwork.all
+    if params[:search]
+      @artworks = Artwork.search(params[:search]).order("created_at DESC")
+    else
+      @artworks = Artwork.all.order("created_at DESC")
+    end
   end
 
   # GET /artworks/1

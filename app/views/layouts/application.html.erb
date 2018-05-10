@@ -31,7 +31,13 @@
             <a class="nav-item nav-link" href="#">Artists</a>
             <a class="nav-item nav-link" href="#"> <%= render 'devise/menu/registration_items' %></a>
             <a class="nav-item nav-link" href="#"> <%= render 'devise/menu/login_items' %></a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            <%= form_tag(artworks_path, :method => "get", id: "search-form") do %>
+              <div class="row">
+                <%= text_field_tag :search, params[:search], placeholder: "Search Artworks", class: "form-control col-6 mr-2" %>
+                <%= submit_tag "Search", :name => nil, class: "btn btn-blue font-white col-4" %>
+              </div>
+
+            <% end %>
         </div>
       </div>
   </nav>
